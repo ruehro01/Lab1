@@ -2,7 +2,7 @@
 function createMap(){
     var map = L.map('map', {
         center: [38,-95],
-        zoom: 5,
+        zoom: 4,
         minZoom:2,
         maxZoom:18
     });
@@ -29,7 +29,7 @@ function calcPropRadius(attValue) {
 
 
 function pointToLayer(feature, latlng, attributes){
-    //Step 4: Assign the current attribute based on the first index of the attributes array
+    //Assign the current attribute based on the first index of the attributes array
     var attribute = attributes[0];
     //check
     console.log(attribute);
